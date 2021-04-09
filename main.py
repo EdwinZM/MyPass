@@ -6,7 +6,7 @@ import tkinter
 # ---------------------------- UI SETUP ------------------------------- #
 window = tkinter.Tk()
 window.title("Password Manager")
-window.config(padx=20, pady=20)
+window.config(padx=50, pady=50)
 window.minsize(width=430, height=320)
 
 image = tkinter.PhotoImage(file="logo.png")
@@ -31,7 +31,7 @@ web_input.grid(column=1, row=1, columnspan=2)
 email_input = tkinter.Entry(width=35)
 email_input.grid(column=1, row=2, columnspan=2)
 pass_input = tkinter.Entry(width=21)
-pass_input.grid(column=1, row=3, sticky="w")
+pass_input.grid(column=1, row=3)
 
 #Buttons
 
