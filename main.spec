@@ -15,9 +15,7 @@ a = Analysis(['main.py'],
              win_private_assemblies=False,
              cipher=block_cipher,
              noarchive=False)
-
-a.datas += [('logo.png','./logo.png', "DATA")]
-
+a.datas += [("logo.png", "./logo.png", "DATA")]
 pyz = PYZ(a.pure, a.zipped_data,
              cipher=block_cipher)
 exe = EXE(pyz,
@@ -33,4 +31,8 @@ exe = EXE(pyz,
           upx=True,
           upx_exclude=[],
           runtime_tmpdir=None,
-          console=True )
+          console=False )
+app = BUNDLE(exe,
+             name='main.app',
+             icon=None,
+             bundle_identifier=None)
