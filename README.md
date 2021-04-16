@@ -7,3 +7,5 @@ a random one!
 
 All info is saved to a text file in your own system.
 No need for internet connection!
+
+For mac users only
